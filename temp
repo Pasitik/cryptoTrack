@@ -1,0 +1,1 @@
+MONGO_URI=mongodb://Aviks:20Asitik17@docdb-2024-12-01-16-20-44.cluster-c9mysiakm14s.us-east-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false
