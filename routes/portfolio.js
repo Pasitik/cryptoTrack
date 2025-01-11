@@ -1,4 +1,5 @@
 const express = require('express')
+const verify = require("../middleware/verify")
 const router = express.Router()
 
 const {
@@ -8,8 +9,8 @@ const {
   deletePortfolio
 } = require('../controllers/portfolio')
 
-router.get('/', getPortfolio)
-router.post('/', postPortfolio)
+router.get('/:id', verify, getPortfolio)
+router.post('/:id', verify, postPortfolio)
 router.put('/:id', updatePortfolio)
 router.delete('/:id', deletePortfolio)
 
